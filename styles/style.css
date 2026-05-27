@@ -389,12 +389,24 @@ position: absolute;
     justify-content: center;
 }
 
+.expertise {
+    background-image: url(../images/bg-test.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.expertise-title {
+    text-align: center;
+}
+
 .expertise-list {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
     font-size: 2rem;
+    padding: 20px 0 20px 0;
 }
 
 .expertise-item {
@@ -402,6 +414,12 @@ position: absolute;
     padding: 15px;
     border-radius: 25px;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all ease 0.4s;
+}
+
+.expertise-item:hover {
+    transform: scale(1.1);
+    border: 1px solid #ffb703;
 }
 
 .expertise-card-number {
@@ -414,6 +432,21 @@ position: absolute;
   -webkit-text-fill-color: transparent;
 }
 
+.expertise-card-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.expertise-card-line {
+   height: 3px; 
+   align-self: stretch;
+   background: linear-gradient(to bottom, #ffe17d 0%, #ffb703 50%, #ff8800 100%);
+   border-radius: 10px;
+   box-shadow: 0 0 5px rgba(255, 183, 3, 0.5);
+   margin: 5px 0;
+}
+
 .expertise-card-text {
     font-size: 1.6rem;
 }
@@ -424,4 +457,60 @@ position: absolute;
   width: 48px;
   height: 48px;
   stroke-width: 2;
+}
+
+.projects {
+    background-image: url(../images/hero-bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.projects-title {
+    text-align: center;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 183, 3, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.swiper-slide {
+    padding: 20px;
+}
+
+.swiper-slide-active .project-card {
+  border-color: #ffb703; 
+  transform: scale(1.05); 
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.project-card-number {
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.project-card-title {
+    font-size: 2.6rem;
+}
+
+.project-card-subtitle {
+    font-size: 1.6rem;
+}
+
+.project-card-link {
+    font-size: 1.6rem;
+}
+
+.project-card-img {
+    width: 100%;
 }
